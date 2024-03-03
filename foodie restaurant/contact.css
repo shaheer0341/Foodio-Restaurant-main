@@ -1,0 +1,345 @@
+/* ====VARIABLE CSS===== */
+:root{
+    --header-height: 5.5rem;
+
+/*====== COLORS ======*/
+   --first-color:  hsl(42, 100%, 53%);
+   --second-color: hsl(0, 85%, 55%);
+   --title-color: hsl(0, 0%, 0%);
+   --text-color: hsl(0, 0%, 33%);
+   --body-color: hsl(0, 0%, 100%);
+   --container-color: hsl(218, 67%, 98%); 
+
+/*====== FONT AND TYROGRAPHY====== */
+   --body-font: 'Epilogue', sans-serif;
+   --second-font: 'Fredoka One', sans-serif;
+   --biggest-font-size: 5.5rem;
+   --bigger-font-size: 3.75rem;
+   --h1-font-size: 2.5rem;
+   --h2-font-size: 1.75rem;
+   --h3-font-size: 1.5rem;
+   --larger-font-size: 1.25rem;
+   --large-font-size: 1.125rem;
+   --normal-font-size: 1rem;
+
+/*===== FONT WEIGHT===== */
+--weight-400:400;
+
+/* ========================TRANSITION================= */
+--transition: ease-in-out;
+
+}
+/* ============BASE====================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ input,
+ button,
+ body{ 
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+input,
+button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-weight: var(--weight-400);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.875rem;
+ }
+
+ img{
+    max-width: 100%;
+ }
+
+
+/* ================REUSEABLE CSS CLASSES============== */
+.container{
+    max-width: 1320px;
+    padding-inline: 0.75rem;
+    margin-inline: auto;
+ }
+ .grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+ 
+ 
+
+ 
+
+
+/* ================HEADER & NAV =========== */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav,
+.nav__list{
+    display: flex;
+}
+
+.nav{
+    height: calc(var(--header-height) + 1.5rem);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list{
+    column-gap: 3rem;
+}
+
+.nav__link{
+    color: var(--body-color);
+    font-family: var(--second-font);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-400);
+    transition: all .3s var(--transition);
+}
+
+.nav__close,
+.logo__mobile,
+.nav__toggle{
+    display: none;
+}
+
+.active-link,
+.nav__link:hover{
+   color: var(--second-color);
+}
+
+/* ======================HOME==================== */
+.home{
+    background-image: url(../images/home-bg.jpg);
+    padding-block: 10.5rem 3.25rem;
+    position: relative;
+}
+
+.home::before{
+    content: '';
+    position: relative;
+    right: 0;
+    top: 20%;
+    width: 880px;
+    height: 400px;
+    background-color: var(--second-color);
+    border-radius: 12rem 0 0 12rem;
+
+}
+
+.home__content{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.home__subtitle{
+    color: var(--second-color);
+    font-size: var(--h3-font-size);
+}
+
+.home__title{
+    color: var(--first-color);
+    font-size: var(--biggest-font-size);
+    margin-bottom: .5rem;
+ }
+
+ .home__description{
+    color: var(--body-color);
+    max-width: 420px;
+    font-size: var(--larger-font-size);
+    margin-bottom: 3.75rem;
+ }
+
+
+ /*================ SWIPER ==============*/
+ .swiper-pagination{
+    position: initial;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .25rem;
+ }
+
+ .swiper-pagination-bullet{
+    opacity: 1;
+    width: 14px;
+    height: 14px;
+    background-color: hsl(0, 0%, 71%);
+ }
+
+ .swiper-pagination-bullet-active{
+    border: 5px solid var(--second-color);
+    background-color: transparent;
+    padding: .25rem;
+ }
+
+ .swiper-button-next::after,
+ .swiper-button-prev::after{
+content: '';
+ }
+
+ .swiper-button-next,
+ .swiper-button-prev{
+    border: 1px solid var(--body-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--body-color);
+    font-size: var(--larger-font-size);
+    top: 95%;
+    transition: all 0.3s var(--transition);
+ }
+
+ .swiper-button-next:hover,
+ .swiper-button-prev:hover{
+    background-color: var(--second-color);
+    border-color: var(--second-color);
+ }
+
+ .swiper-button-next{
+    right: 1rem;
+ }
+ .swiper-button-prev{
+    left: 1rem;
+ }
+
+ /* ===========BUTTON ============*/
+ .button{
+    display: inline-block;
+    color: var(--body-color);
+    background-color: var(--second-color);
+    padding: 1.25rem 2.5rem;
+    font-family: var(--second-font);
+    position: relative;
+ }
+
+ .button::before{
+    content: '';
+    position: absolute;
+    inset-block: -0.5rem;
+    right: -0.5rem;
+    border: 3px solid var(--second-color);
+    width: calc(100% - 1rem);
+    z-index: -1;
+    transition: all 0.3s var(--transition);
+ }
+
+ .button,
+ .button::before{
+    border-radius: 0.75rem;
+ }
+
+ .button:hover::before{
+    width: 30%;
+ }
+
+
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;  }
+    .container__contact  {
+        h1,p{
+      color: red;
+      text-decoration: underline;
+      text-align: center;
+  }
+}
+  
+  /* Add padding to containers */
+ .container__contact  {
+    padding: 6px;
+    background-color: white;
+    margin-top: 4rem;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+
+
+  
+  

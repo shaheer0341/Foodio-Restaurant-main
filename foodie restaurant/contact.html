@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <title>Foodio</title>
+</head>
+<body>
+
+     <!--=========== Header========= -->
+ <header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+        <img src="images/logo white.png" alt="" class="nav__logo-img"></a>
+    
+    <div class="nav__menu" id="nav-menu">
+        <a href="index.html" class="logo__mobile">
+        <img src="images/logo-dark.png" alt="" class="logo__moble-img"/></a>
+
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="index.html" class="nav__link active-link">Home</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="about.html" class="nav__link active-link">About Us</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="menu.html" class="nav__link active-link">Menu</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="reservation.html" class="nav__link active-link">Reservation</a>
+            </li>
+        
+            <li class="nav__item">
+                <a href="contact.html" class="nav__link active-link">Contact Us</a>
+            </li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+        <i class="ri-close-circle-line"></i>
+        </div>
+    </div>
+    <div class="nav__btns">
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+        <a href="reservation.html" class="button reservation__btn">Reserve A Table</a>
+    </div>
+    </nav>
+ </header>
+
+
+    <!--====Main====-->
+    <main class="main">
+
+    <!--====Home====-->
+    <section class="home" id="home">
+        <div class="swiper home-swiper container">
+        <div class="swiper-wrapper">
+
+    <!-- HOME-SWIPER-1 -->
+    <div class="swiper-slide home__content grid">
+        <div class="home__data">
+            <h3 class="home__subtitle">Fastest Delivery & Easy Pickup</h3>
+            <h1 class="home__title">Delicious Food</h1>
+            <p class="home__description">Good food starts with good ingridients. We only bring you the best.</p>
+            
+        </div>
+        <img src="images/slide-2.png" alt="" class="home__img">
+    </div>
+
+
+<form action="/action_page.php">
+  <div class="container__contact">
+    <h1>Contact Us</h1>
+    <p>What Should I Help You?</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
