@@ -30,16 +30,6 @@
 
 }
 /* ============BASE====================== */
-/*
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-}*/
 
  input,
  button,
@@ -47,11 +37,7 @@ html{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
-/*
-body{
-    background-color: var(--body-color);
-    color: var(--text-color);
-}*/
+
 input,
 button{
     outline: none;
@@ -84,11 +70,7 @@ p{
 
 
 /* ================REUSEABLE CSS CLASSES============== */
-/*.container{
-    max-width: 1005;
-    padding-inline: 0.75rem;
-    margin-inline: auto;
- }*/
+
  .grid{
     display: grid;
     gap: 1.5rem;
@@ -149,7 +131,7 @@ p{
 
 /* ======================HOME==================== */
 .home{
-  /* background-image: url(../images/home-bg.jpg);*/
+ 
     padding-block: 10.5rem 3.25rem;
     position: relative;
 }
@@ -304,98 +286,7 @@ body {
 	background-attachment: fixed;
 	height: 900px;
 	margin: -8px;
-}/*
-
-.logo-area {
-	margin-left: 720px;
 }
-
-.logo-area img{
-	margin-top: 50px;
-}
-.menu-area {
-	text-align: center;
-}
-
-.menu-area ul li{
-	display: inline;
-	padding: 20px;
-
-}
-
-.menu-area ul li a{
-	list-style: none;
-	text-decoration: none;
-	color: white;
-}
-.spark1 {
-   margin: 155px 0px -11px 487px;
-}
-
-.spark2 {
-    margin: 0px 0px -30px 478px;
-}
-.spark3 {
-    margin: 0px 0px -227px 513px;
-}
-
-.seemore {
-    margin-top: -49px;
-}
-.seemore h1{
-	text-align: center;
-	color: #ff3939;
-	margin-top: 120px;
-	font-size: 60px;
-	margin-left: 40px;
-}
-.seemore h1 strong{
-	color: dimgray;
-}
-
-.seemore h2 {
-    text-align: center;
-    color: #fff;
-    margin-top: -90px;
-    font-size: 157px;
-    margin-left: 37px;
-    font-weight: 900;
-    margin-bottom: 108px;
-    font-family: sans-serif;
-}
-
-.seemore a {
-    margin-left: 658px;
-    border-radius: 100px;
-    color: white;
-    background-color: #ff3939;
-    border: none;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-size: 15px;
-    padding: 20px 55px 20px 55px;
-    text-decoration: none;
-    font-size: 20px;
-    overflow: hidden;
-    transition: 0.7s;
-}
-
-.seemore a:hover {
-    border: 1px solid white;
-    background-color: transparent;
-}
-
-.button {
-    background-image: url(../images/burger.png);
-    width: 1400px;
-    height: 64px;
-    background-repeat: no-repeat;
-    background-position: 55% 19%;
-    background-attachment: scroll;
-    padding: 323px 44px 219px 0px;
-    margin: -291px 32px -168px 16px;
-    overflow: hidden;
-}*/
 .img1 img {
     border-radius: 25px;
 }
